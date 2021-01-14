@@ -23,8 +23,8 @@ import {
     BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
-    MatIconModule,
-    MatSnackBar
+    MatIconModule
+    //MatSnackBar
   ],
   providers: [
     {

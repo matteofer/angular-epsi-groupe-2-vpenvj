@@ -15,15 +15,15 @@
     <button *ngIf="isSignedIn" routerLink="/dash/profile" mat-menu-item>
       <span>Profil</span>
     </button>
-    <button *ngIf="isSignedIn" (click)="signout()" mat-menu-item>
+    <button
+      *ngIf="isSignedIn"
+      (onclick)="showSnackbar()"
+      (click)="signout()"
+      mat-menu-item
+    >
       <span>Se déconnecter</span>
     </button>
   </mat-menu>
 </nav>
 
 <router-outlet></router-outlet>
-
-
-
-
-

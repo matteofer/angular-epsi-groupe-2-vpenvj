@@ -6,6 +6,7 @@ import { Observable } from "rxjs";
 import { TagInterface } from "../../../core/interfaces/tag.interface";
 import { TagService } from "../../../core/services/tag.service";
 import { MatSnackBar } from "@angular/material/snack-bar";
+import { Content } from "@angular/compiler/src/render3/r3_ast";
 
 @Component({
   selector: "app-profile",
@@ -61,7 +62,7 @@ export class ProfileComponent implements OnInit {
     return false;
   }
 
-  showSnackbar(content) {
-    this.snackBar.open(content);
+  showSnackbar(component) {
+    this.snackBar.open(component);
   }
 }
