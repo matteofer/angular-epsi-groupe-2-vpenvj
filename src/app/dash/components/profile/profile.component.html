@@ -1,9 +1,12 @@
 <h1>Profil</h1>
 
 <form [formGroup]="userForm" (ngSubmit)="updateProfile()">
-
-  <app-firstname-form-field [parentFormGroup]="userForm"></app-firstname-form-field>
-  <app-lastname-form-field [parentFormGroup]="userForm"></app-lastname-form-field>
+  <app-firstname-form-field
+    [parentFormGroup]="userForm"
+  ></app-firstname-form-field>
+  <app-lastname-form-field
+    [parentFormGroup]="userForm"
+  ></app-lastname-form-field>
 
   <mat-form-field appearance="legacy">
     <mat-label>Domaine d'apprentissage</mat-label>
@@ -14,5 +17,12 @@
     </mat-select>
   </mat-form-field>
 
-  <button mat-raised-button color="accent" type="submit">Enregistrer</button>
+  <button
+    mat-raised-button
+    color="accent"
+    type="submit"
+    (click)="showSnackBar('test test')"
+  >
+    Enregistrer
+  </button>
 </form>
