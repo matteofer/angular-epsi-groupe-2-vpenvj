@@ -11,8 +11,9 @@ import {
   MatButtonModule,
   MatIconModule,
   MatMenuModule,
-  MatSnackBar
+  
 } from "@angular/material";
+import {MatSnackBarModule} from '@angular/material/snack-bar'
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,8 +24,8 @@ import {
     BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
-    MatIconModule
-    //MatSnackBar
+    MatIconModule,
+    MatSnackBarModule
   ],
   providers: [
     {

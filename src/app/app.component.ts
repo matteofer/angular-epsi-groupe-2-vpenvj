@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { SessionService } from "./core/services/session.service";
 import { AuthService } from "./core/services/auth.service";
 import { Router } from "@angular/router";
-import { MatSnackBar } from "@angular/material/snack-bar";
+//import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Component({
   selector: "app-root",
@@ -12,7 +12,7 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 export class AppComponent {
   constructor(
     private sessionService: SessionService,
-    private snackBar: MatSnackBar,
+    //private snackBar: MatSnackBar,
     private router: Router
   ) {}
 
@@ -27,8 +27,8 @@ export class AppComponent {
       AuthService.user = null;
     });
   }
-  showSnackbar(component) {
+  /*showSnackbar(component) {
     this.snackBar.open(component);
   }
-  
+  */
 }
